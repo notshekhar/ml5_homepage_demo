@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script type="text/javascript">
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').then(function () {
+        console.log('Service worker successfully registered');
+      }).catch(function (err) {
+        console.error('Service worker failed to register', err);
+      });
+    } else {
+      console.log('Service workers not supported');
+    }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ml5 home page demo</title>
+    <script src="ml5.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div id="container">
+      <center>
+        <img src="banana.jpg" id="image" crossOrigin="anonymous"><br>
+        <input type="file" id="file">
+        <br>
+        <div id="wrap">
+          <center>
+            <button id="get_file">Upload Image</button> <span id="or">/</span><span id="drag">or drag the Image(drag will't works)</span><br>
+            <span id="predicted"></span>
+          </center>
+        </div>
+      </div>
+      </center>
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>

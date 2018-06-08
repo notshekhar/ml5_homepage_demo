@@ -1,0 +1,37 @@
+@font-face {
+  font-family: flurr;
+  src: url(flurr.ttf);
+}
+body{
+  font-family: flurr, sans-serif;
+}
+#file{
+  display: none;
+}
+#class{
+  color: blue;
+}
+#sure{
+  color: red;
+}
+#container{
+}
+#image{
+  width: 300px;
+}
+#get_file{
+  background: #A159FC;
+  font-family: flurr, sans-serif;
+  color: white;
+  border: none;
+  height: 40px;
+  width: 100px;
+  border-radius: 4px;
+  outline: none;
+}
+#drag{
+  font-family: flurr, sans-serif;
+  border: none;
+  outline: none;
+
+}
